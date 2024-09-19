@@ -152,9 +152,6 @@ class App {
                 let path = e.target.getAttribute('src');
                 const hoveredImage = path.split('/').pop();
 
-                console.log("Active texture:", this.activeTexture.path);
-                console.log("Hovered image:", hoveredImage);
-
                 // Set the hoveredTexture
                 const hoveredTexture = this.textures.find(tex => tex.path.includes(hoveredImage));
 
